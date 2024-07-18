@@ -1,7 +1,7 @@
 const scriptURL = 'https://script.google.com/macros/s/AKfycbx7wLC25SOo7mPIYFHXBHTNRdKioiljJknJ6h55oO7EoiG8L90AOUlGJnZZtBz215xeOg/exec'
 
-const form = document.forms['contact-form']
-
+const form = document.forms['checkout-form']
+    
 form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, { method:'POST', body: new FormData(form)})
